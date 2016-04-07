@@ -1,0 +1,38 @@
+.slot-container {
+  @include size($slotSize);
+  padding: $slotMargin;
+  display: block;
+  float: left;
+}
+
+.slot {
+  @include size($slotSize);
+  @include border-radius-separate(100%, 100%, 100%, 100%);
+  background-color: $white;
+  border: 1px solid #ccc;
+  display: block;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  line-height: $slotSize;
+  @include box-sizing(border-box); // Important for grid sizing
+  &:hover {
+    background-color: $lightGrey;
+  }
+
+  // Some responsive stuff if time permits later
+}
+
+.slot-yellow {
+  @include colored-slot($yellow, $black);
+}
+
+.slot-red {
+  @include colored-slot($red, $white);
+}
+
+.slot-disabled {
+  display: none;
+  //background-color: rgba(255, 255, 255, 0.7);
+}

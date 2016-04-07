@@ -1,0 +1,42 @@
+body {
+  background-color: $bgBody;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  margin: 20px 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.players {
+  display: table;
+  margin: 0 auto;
+}
+
+.communicate {
+  display: table;
+  margin: 0 auto;
+  color: $white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: small;
+  height: 30px;
+  line-height: 30px;
+}
+
+.main {
+  display: table;
+  margin: 10px auto;
+  height: 50px;
+  a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    &:hover {
+      color: $lightGrey;
+    }
+  }
+}
+

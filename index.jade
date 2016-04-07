@@ -1,0 +1,52 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Connect Four
+        meta(name='description', content='Connect4 Two player')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel='stylesheet', href='styleSheets/screen.css')
+        script(src='bower_components/jquery/dist/jquery.min.js')
+        script(src='js/ConnectFour-compiled.js')
+        script(src='js/ConnectFourUI-compiled.js')
+        script(src='js/domEvents-compiled.js')
+    body
+        h1 Connect 4
+
+        - var player1 = 'R'
+        - var player2 = 'Y'
+
+        div.players
+            div.slot.slot-red #{player1}
+            div.slot-disabled.slot.slot-yellow #{player2}
+
+        - var numRows = 6
+        - var numCols = 7
+        div.communicate
+        section.connectfour(data-rows='#{numRows}' data-cols='#{numCols}' data-player1='#{player1}' data-player2='#{player2}' )
+            // Start with 0 as for easy/ straightforward mapping to JS
+            - var counter1 = 0
+
+            // Print the grid slots
+            while counter1 < numRows
+
+                // New row
+                - var counter2 = 0
+
+                while counter2 < numCols
+                    div.slot-container(
+                    data-row='#{counter1}'
+                    data-col='#{counter2}'
+                    data-val=
+                    id = 'slot-#{counter1}-#{counter2}'
+                    )
+                        div(
+                            class='slot row-#{counter1} col-#{counter2}'
+                        )
+                        //[#{counter1}][#{counter2}]
+                    - counter2++
+
+                - counter1++
+         .main
+            a(href="") RESET GAME
+        footer

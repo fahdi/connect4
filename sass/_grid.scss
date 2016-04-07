@@ -1,0 +1,26 @@
+.connectfour {
+  clear: both;
+  width: $gridWidth;
+  position: relative;
+  @include center-block;
+  height: $gridHeight;
+  background: $blue;
+  position: relative;
+  @include border-radius(5px);
+  margin: 0 auto; //always works :)
+}
+
+.connectfour-disabled {
+  clear: both;
+  width: $gridWidth;
+  position: relative;
+  @include center-block;
+  height: $gridHeight;
+  background: $lightGrey;
+  position: relative;
+  @include border-radius(5px);
+  margin: 0 auto; //always works :)
+  cursor: none;
+  pointer-events: none;
+  opacity: 0.2;
+}

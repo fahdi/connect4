@@ -1,0 +1,41 @@
+// General page level
+
+$bgBody: #111;
+$baseFontSize: 14px;
+
+// Colors
+
+$blue: blue;
+$lightBlue: #86DBF7;
+$red: red;
+$yellow: yellow;
+$white: white;
+$black: black;
+$lightGrey: #d0d0d0;
+
+// Connect4 Grid
+
+// Number of rows
+$numRows: 6;
+
+// Number of columns
+$numCols: 7;
+
+// Grid variables
+
+// Size of each slot
+$slotSize: 60px;
+
+// Gutter width
+$slotMargin: 10px;
+
+// Simple math
+$slotTotalSize: $slotMargin * 2 + $slotSize;
+
+// Width of the whole grid thingy
+$gridWidth: $slotTotalSize * $numCols;
+
+// Height of the whole grid thingy
+$gridHeight: $slotTotalSize * $numRows + $slotMargin * 2;
+
+// Possible updates if time allows responsiveness for multiple screen sizes

@@ -1,0 +1,30 @@
+{
+  "name": "connect4",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Fahad Murtaza"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "connect4",
+    "js",
+    "html",
+    "css",
+    "ecmascript"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}
