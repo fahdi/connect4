@@ -41,3 +41,6 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['compass', 'jade']);
     // Default task.
 };
+
+
+//TODO: Improve and test this for a solid build directory
