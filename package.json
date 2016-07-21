@@ -8,7 +8,9 @@
     "grunt": "^0.4.5",
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-jade": "^0.5.1"
+    "grunt-jade": "^0.5.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "jade": "^1.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

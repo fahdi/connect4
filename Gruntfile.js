@@ -13,10 +13,20 @@ module.exports = function (grunt) {
                 }
             }
         },
+        jade: {
+            compile: {
+                options: {
+                    pretty: true,
+                },
+                files: {
+                    'index.html': 'index.jade'
+                }
+            }
+        },
         watch: {
             scripts: {
-                files: 'sass/*.scss',
-                tasks: ['compass'],
+                files: ['sass/*.scss', '*.jade'],
+                tasks: ['compass', 'jade'],
                 options: {
                     spawn: false,
                 },
@@ -26,7 +36,8 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jade');
 
-    grunt.registerTask('default', ['compass']);
-
+    grunt.registerTask('default', ['compass', 'jade']);
+    // Default task.
 };
