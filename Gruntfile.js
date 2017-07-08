@@ -1,5 +1,15 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.initConfig({
+    jshint: {
+      files: ['Gruntfile.js', 'js/*.js', 'test/**/*.js'],
+      options: {
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true
+        }
+      }
+    },
     compass: { // Task
       dist: { // Target
         options: {
@@ -33,18 +43,20 @@ module.exports = function(grunt) {
       },
     },
     build: {
-      scripts: {            
+      scripts: {
         tasks: ['compass', 'jade'],
         options: {
           spawn: true,
         },
       },
-    }
+    },
+    pkg: grunt.file.readJSON('package.json'),
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('default', ['compass', 'jade']);
   // Default task.
