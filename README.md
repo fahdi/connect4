@@ -14,18 +14,18 @@ Implementation by Fahad Murtaza
 * Babel for ECMAScript 6 to ECMAScript 5 transpiling.
 * I have left some console print statements intentionally for future testing and teaching it as example for algo-training.
 
-##How to create a new grid
+## How to create a new grid
 * A different size grid can be created by updating the respective *$numRows* and *$numCols* variables in [sass/_variables.scss](sass/_variables.scss) along with the [index.jade ](index.jade ) file. 
 
-##How to run unit tests
+## How to run unit tests
 
 Browse [test/index.html](test/index.html) to run all unit tests. 
 
-######Inetresting finding while testing
-> 
+###### Inetresting find while testing
+
 > ECMAScript 6 has excellent support in all latest browsers including Chrome, Firefox and Opera but surprisingly doesn't work without being transpiled in ECMAScript 5. That is the only reason I have used transpiled versions in the html and Jasmine tests. The original source code is in respective files though.
 
-#Make changes in project
+# Make changes in project
 
 * Install npm packages via `npm install`
 * Install bower packages via `bower install`
