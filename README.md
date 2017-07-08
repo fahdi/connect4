@@ -1,7 +1,7 @@
-#Connect 4 
+# Connect 4 
 Implementation by Fahad Murtaza
 
-##Info
+## Info
 
 * This connect 4 game uses JavaScript ( ECMAScript 2015/ ECMAScript 6 spec), jQuery, HTML and CSS for development
 * [Jade](http://jade-lang.com/) is used to create an easy to modify grid for different lengths. phpStorm's file watcher was used to run jade to generate HTML everytime there is a change in HTML file. Make life really easy.
