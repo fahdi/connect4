@@ -1,16 +1,26 @@
 # Connect 4 
-Implementation by Fahad Murtaza
 
-## Info
+A connect4 implementation using ES6/7 
+
+# Installation 
+
+## Pre requisites 
+
+* Have `compass` installed
+* Have `npm` or `yarn` installed
+
+## Setup
+
+* Run `npm install` or `yarn`
+
+## Useful Info
 
 * This connect 4 game uses JavaScript ( ECMAScript 2015/ ECMAScript 6 spec), jQuery, HTML and CSS for development
 * [Jade](http://jade-lang.com/) is used to create an easy to modify grid for different lengths. phpStorm's file watcher was used to run jade to generate HTML everytime there is a change in HTML file. Make life really easy.
 * All generated files are zipped so there is no package installation needed.
-* Gruntfile has been used for sass compilation via compass framework. A direct sass compilation can also be done via grunt. I have used phpStorm as IDE which allows for easy file change monitoring i.e "File watchers". 
-* [Yeoman](http://yeoman.io/) was used to initially create a file structure for quick prototyping.
+* Gruntfile has been used for sass compilation via compass framework. A direct sass compilation can also be done via grunt. I have used phpStorm as IDE which allows for easy file change monitoring i.e "File watchers".
 * IE Sass files were removed as cross browser compatibility is not a requirement.
 * The program has been tested with latest versions of Chrome, Firefox, Safari and Opera browsers. 
-* [Bower](http://bower.io) is used just to load jquery and Jasmine for testing.
 * Babel for ECMAScript 6 to ECMAScript 5 transpiling.
 * I have left some console print statements intentionally for future testing and teaching it as example for algo-training.
 
@@ -21,16 +31,15 @@ Implementation by Fahad Murtaza
 
 Browse [test/index.html](test/index.html) to run all unit tests. 
 
-###### Inetresting find while testing
+###### Note
 
 > ECMAScript 6 has excellent support in all latest browsers including Chrome, Firefox and Opera but surprisingly doesn't work without being transpiled in ECMAScript 5. That is the only reason I have used transpiled versions in the html and Jasmine tests. The original source code is in respective files though.
 
-# Make changes in project
+# Try it
 
 * Install npm packages via `npm install`
-* Install bower packages via `bower install`
 * Setup file watchers for compass, jade and optionally babel if you want Javascript transpiling into ECMAScript 6. 
-* Update respective files and they should be able to compile the required files. I could improve it just by placing all of these into a grunt task and using one watch task for each of them and one publish task for a complete package ( but only if it were a production level project that needed continuous integration)
+* Update respective files and they should be able to compile/ transpile the required files. You could improve it just by placing all of these into a grunt task and using one watch task for each of them and one publish task for a complete package. If you do, please create a PR :)
 
 # Possible Improvements
 
@@ -45,6 +54,6 @@ Browse [test/index.html](test/index.html) to run all unit tests.
 * Highlight the winning move in UI, for better UX.
 * Do a complete build in a 'dist' folder for package release.
 
-# Questions ?
+# Contribute
 
-Open an issue and I'd respond 
+If you make any changes, please open a PR :) 
