@@ -17,6 +17,7 @@ A connect4 implementation using ES6/7
 
 * This connect 4 game uses JavaScript ( ECMAScript 2015/ ECMAScript 6 spec), jQuery, HTML and CSS for development
 * [Jade](http://jade-lang.com/) is used to create an easy to modify grid for different lengths. phpStorm's file watcher was used to run jade to generate HTML everytime there is a change in HTML file. Make life really easy.
+  * Update: We no longer need Jade, as we are using ES6/7, we can use template strings to generate HTML. A new HTML file is available now. 
 * All generated files are zipped so there is no package installation needed.
 * Gruntfile has been used for sass compilation via compass framework. A direct sass compilation can also be done via grunt. I have used phpStorm as IDE which allows for easy file change monitoring i.e "File watchers".
 * IE Sass files were removed as cross browser compatibility is not a requirement.

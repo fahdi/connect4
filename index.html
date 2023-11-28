@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Four</title>
+    <meta name="description" content="Connect4 Two player">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/ConnectFour.js"></script>
+    <script src="js/ConnectFourUI.js"></script>
+    <script src="js/domEvents.js"></script>
+</head>
+<body>
+<h1>Connect 4</h1>
+
+<div class="players">
+    <div class="slot slot-red">R</div>
+    <div class="slot-disabled slot slot-yellow">Y</div>
+</div>
+
+<div class="communicate"></div>
+
+<section class="connectfour" data-rows="6" data-cols="7" data-player1="R" data-player2="Y">
+
+</section>
+
+<div class="main">
+    <a href="#">RESET GAME</a>
+</div>
+
+<footer>
+    <p>&copy; 2016</p>
+</footer>
+</body>
+</html>

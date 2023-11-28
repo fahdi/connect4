@@ -109,3 +109,30 @@ $(document).ready(function() {
   }
   return false;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var connectFour = document.querySelector('.connectfour');
+  var numRows = parseInt(connectFour.getAttribute('data-rows'), 10);
+  var numCols = parseInt(connectFour.getAttribute('data-cols'), 10);
+
+  console.log(numRows, numCols);
+
+  for (var row = 0; row < numRows; row++) {
+    var rowDiv = document.createElement('div');
+    rowDiv.className = 'row';
+    for (var col = 0; col < numCols; col++) {
+      var cell = document.createElement('div');
+      cell.className = 'slot-container';
+      cell.setAttribute('data-row', row);
+      cell.setAttribute('data-col', col);
+      cell.id = 'slot-' + row + '-' + col;
+
+      var innerDiv = document.createElement('div');
+      innerDiv.className = 'slot row-' + row + ' col-' + col;
+
+      cell.appendChild(innerDiv);
+      rowDiv.appendChild(cell);
+    }
+    connectFour.appendChild(rowDiv);
+  }
+});
